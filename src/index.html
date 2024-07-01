@@ -3,12 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <!-- PON UN FAVICON!!! -->
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/cat.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>rock, paper, scissors</title>
+    <link rel="stylesheet" href="css/styles.scss">
   </head>
   <body>
+    <header class="header">
+      <div class="score">
+        <span class="score__title">YOU</span>
+        <span id="points-user" class="score__points">0</span>
+      </div>
+      <div class="logo">
+        <span class="block">ROCK</span>
+        <span class="block">PAPER</span>
+        <span class="block">SCISSORS</span>
+      </div>
+      <div class="score">
+        <span class="score__title">PC</span>
+        <span id="points-pc" class="score__points">0</span>
+      </div>
+    </header>
+    <main>
+      <div id="game-items" class="game-items game-items--simple">
+        <div class="game-item game-item--paper game-item--paper-simple" data-item="paper">
+          <img src="assets/images/icon-paper.svg" class="game-item__image" alt="icon paper" />
+        </div>
+        <div class="game-item game-item--scissors game-item--scissors-simple" data-item="scissors">
+          <img
+            src="./assets/images/icon-scissors.svg"
+            class="game-item__image"
+            alt="icon scissors"
+          />
+        </div>
+        <div class="game-item game-item--rock game-item--rock-simple" data-item="rock">
+          <img src="./assets/images/icon-rock.svg" class="game-item__image" alt="icon rock" />
+        </div>
+      </div>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
